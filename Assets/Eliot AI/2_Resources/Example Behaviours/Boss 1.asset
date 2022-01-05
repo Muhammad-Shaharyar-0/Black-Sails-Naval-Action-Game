@@ -1,0 +1,918 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7885503718797918432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffabec1efbdada2488c6d068be832aaf, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 7
+  NodeName: Action
+  NodeId: Action
+  Rect:
+    serializedVersion: 2
+    x: 2472
+    y: 1462
+    width: 216
+    height: 56
+  Transitions: []
+  TransitionsIn:
+  - {fileID: 7637127019530673113}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  FuncIndex: 1
+  FuncNames:
+  - AimAtPlayer
+  - FireCannons
+  - FireMortar
+  - FlankTarget
+  - FlankTarget1
+  - LuanchFireBarrels
+  - MoveAroundWaypoints
+  - MoveToPlayer
+  - ResetTarget
+  - SelectTargetForFlankging
+  _functionName: FireCannons
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: BasicTargetActionInterface
+    FullMethodName: FireCannons
+    MethodParameters: []
+  ActionGroupIndex: 1
+--- !u!114 &-7834149766212741243
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffabec1efbdada2488c6d068be832aaf, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 5
+  NodeName: Action
+  NodeId: Action
+  Rect:
+    serializedVersion: 2
+    x: 1692
+    y: 1492
+    width: 216
+    height: 56
+  Transitions: []
+  TransitionsIn:
+  - {fileID: 0}
+  FuncIndex: 7
+  FuncNames:
+  - AimAtPlayer
+  - FireCannons
+  - FireMortar
+  - FlankTarget
+  - FlankTarget1
+  - LuanchFireBarrels
+  - MoveAroundWaypoints
+  - MoveToPlayer
+  - ResetTarget
+  - SelectTargetForFlankging
+  _functionName: MoveToPlayer
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: BasicTargetActionInterface
+    FullMethodName: MoveToPlayer
+    MethodParameters: []
+  ActionGroupIndex: 1
+--- !u!114 &-7608768690378664605
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b700b82d4000714cb9a7bd016098bc9, type: 3}
+  m_Name: Entry
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 0
+  NodeName: Entry
+  NodeId: Entry
+  Rect:
+    serializedVersion: 2
+    x: 1992
+    y: 992
+    width: 216
+    height: 56
+  Transitions:
+  - {fileID: 3225321036246606236}
+  - {fileID: -6335296369002732759}
+  TransitionsIn: []
+  FuncIndex: 0
+  FuncNames:
+  - loading...
+  _functionName: 
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+--- !u!114 &-7052288275351217164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: 4456583202757274648}
+  End: {fileID: -2770653053601323446}
+  Color: {r: 0.8, g: 0.3, b: 0.2, a: 1.1999999}
+  _isNegative: 1
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: -7052288275351217164}
+--- !u!114 &-6335296369002732759
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: -7608768690378664605}
+  End: {fileID: -2770653053601323446}
+  Color: {r: 0.85, g: 0.85, b: 0.85, a: 1.1999999}
+  _isNegative: 0
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: -6335296369002732759}
+--- !u!114 &-5426091562298132682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bd89bae99f45f78dc1d78696f8bedd, type: 3}
+  m_Name: Loop
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 2
+  NodeName: Loop
+  NodeId: Loop
+  Rect:
+    serializedVersion: 2
+    x: 2132
+    y: 1112
+    width: 216
+    height: 56
+  Transitions:
+  - {fileID: 4128752614711878985}
+  TransitionsIn:
+  - {fileID: 3225321036246606236}
+  FuncIndex: 11
+  FuncNames:
+  - EnemyIsAimingAtMe
+  - EnemyIsFleeing
+  - EnemyIsLoadingAttack
+  - FriendNotFullyHealthy
+  - HeardSomething
+  - InWayPointRange
+  - IsBeingTargeted
+  - ObstaclesBeforeTarget
+  - SeeBetterWeapon
+  - SeeBlock
+  - SeeCorpse
+  - SeeEnemy
+  - SeeEnergyPotion
+  - SeeFriend
+  - SeeHealingPotion
+  - SeeShelter
+  - SeeTargetsBack
+  - SeeUnitOfType
+  - TargetClosestEnemy
+  - TargetHasFullHealth
+  - TargetHasLowHealth
+  - TargetInCloseRange
+  - TargetInFarRange
+  - TargetInMidRange
+  - TargetInRange
+  - TargetInSkillRange
+  - TargetIsFake
+  - TargetIsFriendly
+  - TargetIsInFrontOfMe
+  - TargetNotFullyHealthy
+  - TargetWeakestEnemy
+  - TargetWeakestFriend
+  _functionName: SeeEnemy
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  Reverse: 0
+  ConditionGroupIndex: 3
+  MethodData:
+    FullClassName: Eliot.AgentComponents.StandardPerceptionConditionInterface
+    FullMethodName: SeeEnemy
+    MethodParameters: []
+--- !u!114 &-3300316087852755381
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: 8183055448530008526}
+  End: {fileID: 4291888116759619385}
+  Color: {r: 0.8, g: 0.3, b: 0.2, a: 1.1999999}
+  _isNegative: 1
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: -3300316087852755381}
+--- !u!114 &-2770653053601323446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffabec1efbdada2488c6d068be832aaf, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 1
+  NodeName: Action
+  NodeId: Action
+  Rect:
+    serializedVersion: 2
+    x: 1742
+    y: 1122
+    width: 216
+    height: 56
+  Transitions: []
+  TransitionsIn:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -7052288275351217164}
+  FuncIndex: 6
+  FuncNames:
+  - AimAtPlayer
+  - FireCannons
+  - FireMortar
+  - FlankTarget
+  - FlankTarget1
+  - LuanchFireBarrels
+  - MoveAroundWaypoints
+  - MoveToPlayer
+  - ResetTarget
+  - SelectTargetForFlankging
+  _functionName: MoveAroundWaypoints
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: BasicTargetActionInterface
+    FullMethodName: MoveAroundWaypoints
+    MethodParameters: []
+  ActionGroupIndex: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 001aeb3efde68a04382931e17df01c51, type: 3}
+  m_Name: Boss 1
+  m_EditorClassIdentifier: 
+  Nodes:
+  - {fileID: -7608768690378664605}
+  - {fileID: -2770653053601323446}
+  - {fileID: -5426091562298132682}
+  - {fileID: 8183055448530008526}
+  - {fileID: 5886465798815168638}
+  - {fileID: -7834149766212741243}
+  - {fileID: 4291888116759619385}
+  - {fileID: -7885503718797918432}
+  - {fileID: 1765395591394858440}
+  - {fileID: 4456583202757274648}
+  Transitions:
+  - {fileID: 3225321036246606236}
+  - {fileID: -6335296369002732759}
+  - {fileID: 4128752614711878985}
+  - {fileID: -3300316087852755381}
+  - {fileID: 7517707372767522825}
+  - {fileID: 7637127019530673113}
+  - {fileID: 4686092969616478748}
+  - {fileID: 5919384337113155052}
+  - {fileID: 2378572063907568352}
+  - {fileID: -7052288275351217164}
+  _json: 
+--- !u!114 &1765395591394858440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffabec1efbdada2488c6d068be832aaf, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 8
+  NodeName: Action
+  NodeId: Action
+  Rect:
+    serializedVersion: 2
+    x: 3592
+    y: 2192
+    width: 216
+    height: 56
+  Transitions: []
+  TransitionsIn: []
+  FuncIndex: 8
+  FuncNames:
+  - AimAtPlayer
+  - FireCannons
+  - FireMortar
+  - FlankTarget
+  - FlankTarget1
+  - LuanchFireBarrels
+  - MoveAroundWaypoints
+  - MoveToPlayer
+  - ResetTarget
+  - SelectTargetForFlankging
+  _functionName: 
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: BasicTargetActionInterface
+    FullMethodName: ResetTarget
+    MethodParameters: []
+  ActionGroupIndex: 1
+--- !u!114 &2378572063907568352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: 4456583202757274648}
+  End: {fileID: -7885503718797918432}
+  Color: {r: 0.8, g: 0.3, b: 0.2, a: 1.1999999}
+  _isNegative: 1
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: 2378572063907568352}
+--- !u!114 &3225321036246606236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: -7608768690378664605}
+  End: {fileID: -5426091562298132682}
+  Color: {r: 0.85, g: 0.85, b: 0.85, a: 1.1999999}
+  _isNegative: 0
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: 3225321036246606236}
+--- !u!114 &4128752614711878985
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: -5426091562298132682}
+  End: {fileID: 8183055448530008526}
+  Color: {r: 0.7, g: 0.1, b: 0.9, a: 1.1999999}
+  _isNegative: 0
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: 4128752614711878985}
+--- !u!114 &4291888116759619385
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffabec1efbdada2488c6d068be832aaf, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 6
+  NodeName: Action
+  NodeId: Action
+  Rect:
+    serializedVersion: 2
+    x: 2312
+    y: 1342
+    width: 216
+    height: 56
+  Transitions:
+  - {fileID: 7637127019530673113}
+  TransitionsIn:
+  - {fileID: 0}
+  - {fileID: -3300316087852755381}
+  FuncIndex: 4
+  FuncNames:
+  - AimAtPlayer
+  - FireCannons
+  - FireMortar
+  - FlankTarget
+  - FlankTarget1
+  - LuanchFireBarrels
+  - MoveAroundWaypoints
+  - MoveToPlayer
+  - ResetTarget
+  - SelectTargetForFlankging
+  _functionName: FlankTarget1
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: BasicTargetActionInterface
+    FullMethodName: FlankTarget1
+    MethodParameters: []
+  ActionGroupIndex: 1
+--- !u!114 &4456583202757274648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04f5d23e01e9e34ca4a84103168c611, type: 3}
+  m_Name: Condition
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 9
+  NodeName: Condition
+  NodeId: Condition
+  Rect:
+    serializedVersion: 2
+    x: 2032
+    y: 1372
+    width: 216
+    height: 56
+  Transitions:
+  - {fileID: 4686092969616478748}
+  - {fileID: 5919384337113155052}
+  - {fileID: 2378572063907568352}
+  - {fileID: -7052288275351217164}
+  TransitionsIn:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 7517707372767522825}
+  FuncIndex: 19
+  FuncNames:
+  - CanUseCurrentSkill
+  - CanUseSkill
+  - EnergyEmpty
+  - EnergyEquals
+  - EnergyFull
+  - EnergyLessEquals
+  - EnergyLessThan
+  - EnergyLow
+  - EnergyMoreEquals
+  - EnergyMoreThan
+  - HealthEmpty
+  - HealthEquals
+  - HealthFull
+  - HealthHalf
+  - HealthLessEquals
+  - HealthLessThan
+  - HealthLow
+  - HealthMoreEquals
+  - HealthMoreThan
+  - NearDeath
+  - ResourceEmpty
+  - ResourceEquals
+  - ResourceFull
+  - ResourceLessEquals
+  - ResourceLessThan
+  - ResourceMoreEquals
+  - ResourceMoreThan
+  _functionName: NearDeath
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: Eliot.AgentComponents.StandardResourcesConditionInterface
+    FullMethodName: NearDeath
+    MethodParameters: []
+  ConditionGroupIndex: 5
+  Reverse: 0
+--- !u!114 &4686092969616478748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: 4456583202757274648}
+  End: {fileID: 5886465798815168638}
+  Color: {r: 0.8, g: 0.3, b: 0.2, a: 1.1999999}
+  _isNegative: 1
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: 4686092969616478748}
+--- !u!114 &5886465798815168638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffabec1efbdada2488c6d068be832aaf, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 4
+  NodeName: Action
+  NodeId: Action
+  Rect:
+    serializedVersion: 2
+    x: 2132
+    y: 1532
+    width: 216
+    height: 56
+  Transitions: []
+  TransitionsIn: []
+  FuncIndex: 2
+  FuncNames:
+  - AimAtPlayer
+  - FireCannons
+  - FireMortar
+  - FlankTarget
+  - FlankTarget1
+  - LuanchFireBarrels
+  - MoveAroundWaypoints
+  - MoveToPlayer
+  - ResetTarget
+  - SelectTargetForFlankging
+  _functionName: FireMortar
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: BasicTargetActionInterface
+    FullMethodName: FireMortar
+    MethodParameters: []
+  ActionGroupIndex: 1
+--- !u!114 &5919384337113155052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: 4456583202757274648}
+  End: {fileID: -7834149766212741243}
+  Color: {r: 0.2, g: 0.8, b: 0.1, a: 1.1999999}
+  _isNegative: 0
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: 5919384337113155052}
+--- !u!114 &7517707372767522825
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: 8183055448530008526}
+  End: {fileID: 4456583202757274648}
+  Color: {r: 0.2, g: 0.8, b: 0.1, a: 1.1999999}
+  _isNegative: 0
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: 7517707372767522825}
+--- !u!114 &7637127019530673113
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7155c4d5f61d6af4e9e580c8a24ac8f7, type: 3}
+  m_Name: Transition
+  m_EditorClassIdentifier: 
+  Start: {fileID: 4291888116759619385}
+  End: {fileID: -7885503718797918432}
+  Color: {r: 0.85, g: 0.85, b: 0.85, a: 1.1999999}
+  _isNegative: 0
+  TransitionsData:
+  - TransitionId: Transition
+    MinProbability: 100
+    MaxProbability: 100
+    MinCooldown: 0
+    MaxCooldown: 0
+    Terminate: 0
+    MethodData:
+      FullClassName: 
+      FullMethodName: 
+      MethodParameters: []
+    FunctionName: 
+    ConditionGroupIndex: 0
+    FuncIndex: 0
+    CaptureControl: 0
+    CaptureControlOnTrue: 0
+    CaptureControlOnFalse: 0
+    UseCondition: 0
+    Reverse: 0
+    Transition: {fileID: 7637127019530673113}
+--- !u!114 &8183055448530008526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04f5d23e01e9e34ca4a84103168c611, type: 3}
+  m_Name: Condition
+  m_EditorClassIdentifier: 
+  Exist: 1
+  EditorId: 3
+  NodeName: Condition
+  NodeId: Condition
+  Rect:
+    serializedVersion: 2
+    x: 2142
+    y: 1212
+    width: 216
+    height: 56
+  Transitions:
+  - {fileID: -3300316087852755381}
+  - {fileID: 7517707372767522825}
+  TransitionsIn:
+  - {fileID: 4128752614711878985}
+  FuncIndex: 13
+  FuncNames:
+  - CanUseCurrentSkill
+  - CanUseSkill
+  - EnergyEmpty
+  - EnergyEquals
+  - EnergyFull
+  - EnergyLessEquals
+  - EnergyLessThan
+  - EnergyLow
+  - EnergyMoreEquals
+  - EnergyMoreThan
+  - HealthEmpty
+  - HealthEquals
+  - HealthFull
+  - HealthHalf
+  - HealthLessEquals
+  - HealthLessThan
+  - HealthLow
+  - HealthMoreEquals
+  - HealthMoreThan
+  - NearDeath
+  - ResourceEmpty
+  - ResourceEquals
+  - ResourceFull
+  - ResourceLessEquals
+  - ResourceLessThan
+  - ResourceMoreEquals
+  - ResourceMoreThan
+  _functionName: HealthHalf
+  Behaviour: {fileID: 11400000}
+  CaptureControl: 0
+  MethodData:
+    FullClassName: Eliot.AgentComponents.StandardResourcesConditionInterface
+    FullMethodName: HealthHalf
+    MethodParameters: []
+  ConditionGroupIndex: 5
+  Reverse: 0
